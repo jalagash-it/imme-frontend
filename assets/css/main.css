@@ -1,0 +1,9 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    max-width: 1600px;
+    width: 1600px;
+}
