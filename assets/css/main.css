@@ -1,9 +1,66 @@
 html,
 body {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    max-width: 1600px;
-    width: 1600px;
+  max-width: 1600px;
+  width: 1600px;
 }
+
+.catalog {
+  margin-top: 55px;
+ 
+}
+.catalog__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left__arrow{
+  flex-grow: 1;
+  text-align: center;
+}
+.right__arrow{
+  flex-grow: 1;
+  text-align: center;
+}
+.catalog__item {
+  position: relative;
+  width: 193px;
+  height: 319px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+  filter: drop-shadow(5px 10px 30px rgba(41, 41, 167, 0.08));
+  background: linear-gradient(
+    180deg,
+    rgba(203, 191, 255, 0.2) 0%,
+    rgba(203, 191, 255, 0) 100%
+  );
+}
+.catalog__item p {
+  color: #60617b;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+.catalog__item a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+.catalog__item a::after {
+  content: ">";
+}
+ 
