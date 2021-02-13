@@ -11,11 +11,21 @@
         <b-navbar-nav align="right">end</b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    
+    <SalesSlider />
+
   </b-container>
 </template>
 
 <script>
-export default {};
+import SalesSlider from '~/components/SalesSlider'
+
+export default {   
+  components:{
+    SalesSlider
+  }
+
+};
 </script>
 
 <style scoped>
