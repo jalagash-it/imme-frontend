@@ -13,12 +13,14 @@
     </b-navbar>
     <CatalogSlider />
     <SalesSlider />
+    <PrivatePolice/>
   </b-container>
 </template>
 
 <script>
 import CatalogSlider from "~/components/CatalogSlider";
 import SalesSlider from "~/components/SalesSlider";
+import PrivatePolice from "~/components/PrivatePolice";
 
 export default {
   components: {
@@ -29,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -36,6 +42,10 @@ export default {
 .main-nav {
   display: flex;
   justify-content: space-between;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 </style>
 

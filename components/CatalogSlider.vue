@@ -2,16 +2,14 @@
   <div class="catalog">
     <div class="catalog__content">
       <div class="left__arrow">
-        <a href="#" > <img src="../assets/img/prev.png" alt=""></a>
+        <a href="#"> <img src="../assets/img/prev.png" alt="" /></a>
       </div>
       <div class="catalog__item">
- 
         <p>Бортики</p>
         <a href="#">Перейти</a>
       </div>
 
       <div class="catalog__item">
- 
         <p>Балдахины</p>
         <a href="#">Перейти</a>
       </div>
@@ -43,19 +41,13 @@
 </template>
 
 <style scoped>
-img {
-  max-width: 100%;
-  height: auto;
-}
 .catalog {
   margin-top: 105px;
   margin-bottom: 55px;
- 
- 
-height: 536px;
- 
 
-background: linear-gradient(180deg, #FFFFFF 0%, #F2F2FF 100%);
+  height: 536px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f2f2ff 100%);
   background: url(../assets/img/bg.png) no-repeat center -85px / cover;
 }
 .catalog__content {
@@ -65,35 +57,35 @@ background: linear-gradient(180deg, #FFFFFF 0%, #F2F2FF 100%);
 }
 .left__arrow {
   text-align: center;
+  flex-grow: 1;
 }
 .right__arrow {
   text-align: center;
+  flex-grow: 1;
 }
 .catalog__item {
   position: relative;
   width: 193px;
   height: 319px;
+ 
+  border: 4px solid #ffffff;
+  flex-grow: 2;
+  margin-right: 25px;
+
+
   border-radius: 30px;
-  border: 4px solid #FFFFFF;
- 
- 
-border-radius: 30px;
   box-shadow: 5px 5px 30px rgba(41, 41, 167, 0.12);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
  
-
-  background: linear-gradient(
-    180deg,
-    rgba(203, 191, 255, 0.2) 0%,
-    rgba(203, 191, 255, 0) 100%
-  
-  );
 }
-.catalog__item{
-  background: url('../assets/img/2.png') no-repeat center center / cover;
+.catalog__item:nth-last-child(){
+  margin-right: 0;
+}
+.catalog__item {
+  background: url("../assets/img/2.png") no-repeat center center / cover;
 }
 .catalog__item p {
   color: #60617b;
@@ -110,9 +102,8 @@ border-radius: 30px;
 
   line-height: 13px;
   margin-bottom: 10px;
- 
 }
- 
+
 .catalog__item a::after {
   content: ">";
 }
