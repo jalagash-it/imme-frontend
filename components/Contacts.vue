@@ -137,7 +137,7 @@
   margin-bottom: 28px;
 }
 .contact__info-email a {
-  margin-left: 110px;
+  margin-left: 150px;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
