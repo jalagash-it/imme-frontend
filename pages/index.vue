@@ -14,6 +14,7 @@
     <CatalogSlider />
     <SalesSlider />
     <PrivatePolice/>
+  <Contacts/>
   </b-container>
 </template>
 
@@ -21,6 +22,7 @@
 import CatalogSlider from "~/components/CatalogSlider";
 import SalesSlider from "~/components/SalesSlider";
 import PrivatePolice from "~/components/PrivatePolice";
+import Contacts from "~/components/Contacts";
 
 export default {
   components: {

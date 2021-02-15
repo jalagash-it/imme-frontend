@@ -45,7 +45,7 @@
           разбавленное изрядной долей эмпатии, рациональное мышление
           предопределяет высокую востребованность анализа существующих паттернов
           поведения!
-       
+
           <ul type="disc">
             <li>
               Как принято считать, диаграммы связей являются только методом
@@ -148,7 +148,7 @@
   font-family: "Montserrat";
   background: #f7f9fc;
   padding-top: 48px;
-  padding-bottom:80px;
+  padding-bottom: 80px;
 }
 .private__police-title {
   font-weight: bold;
@@ -166,8 +166,8 @@
   line-height: 21px;
   color: #60617b;
 }
-li{
-    margin-bottom: 15px;
+li {
+  margin-bottom: 15px;
 }
 ul li {
   list-style-type: disc;
@@ -180,7 +180,7 @@ ul li {
   width: 846px;
   height: 144px;
   margin-left: 25px;
-font-style: italic;
+  font-style: italic;
   background: rgba(107, 139, 201, 0.05);
   border-radius: 15px;
   font-weight: 300;
@@ -200,14 +200,10 @@ font-style: italic;
   color: #60617b;
   font-weight: 500;
   align-self: flex-end;
-  
- 
-
- 
 }
 .private__police-attention {
   padding: 24px;
-font-style: normal;
+  font-style: normal;
 
   width: 846px;
   height: 144px;
@@ -222,7 +218,5 @@ font-style: normal;
   margin-left: 25px;
   color: #ffffff;
   margin-top: 25px;
-   
-
 }
 </style>

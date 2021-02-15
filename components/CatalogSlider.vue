@@ -1,5 +1,5 @@
 <template>
-  <div class="catalog">
+  <b-container fluid> <div class="catalog">
     <div class="catalog__content">
       <div class="left__arrow">
         <a href="#"> <img src="../assets/img/prev.png" alt="" /></a>
@@ -37,7 +37,8 @@
         <a href="#"><img src="../assets/img/next.png" alt="" /> </a>
       </div>
     </div>
-  </div>
+  </div></b-container>
+  
 </template>
 
 <style scoped>
@@ -48,7 +49,7 @@
   height: 536px;
 
   background: linear-gradient(180deg, #ffffff 0%, #f2f2ff 100%);
-  background: url(../assets/img/bg.png) no-repeat center -85px / cover;
+  background: url(../assets/img/bg.png) no-repeat center -55px / cover;
 }
 .catalog__content {
   display: flex;
@@ -57,11 +58,11 @@
 }
 .left__arrow {
   text-align: center;
-  flex-grow: 1;
+ 
 }
 .right__arrow {
   text-align: center;
-  flex-grow: 1;
+ 
 }
 .catalog__item {
   position: relative;
@@ -69,8 +70,8 @@
   height: 319px;
  
   border: 4px solid #ffffff;
-  flex-grow: 2;
-  margin-right: 25px;
+ 
+  
 
 
   border-radius: 30px;
@@ -81,9 +82,7 @@
   justify-content: flex-end;
  
 }
-.catalog__item:nth-last-child(){
-  margin-right: 0;
-}
+ 
 .catalog__item {
   background: url("../assets/img/2.png") no-repeat center center / cover;
 }
