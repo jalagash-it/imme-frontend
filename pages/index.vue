@@ -13,8 +13,9 @@
     </b-navbar>
     <CatalogSlider />
     <SalesSlider />
-    <PrivatePolice/>
-  <Contacts/>
+    <PrivatePolice />
+    <Contacts />
+    <About />
   </b-container>
 </template>
 
@@ -23,6 +24,7 @@ import CatalogSlider from "~/components/CatalogSlider";
 import SalesSlider from "~/components/SalesSlider";
 import PrivatePolice from "~/components/PrivatePolice";
 import Contacts from "~/components/Contacts";
+import About from "~/components/About";
 
 export default {
   components: {
