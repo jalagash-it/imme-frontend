@@ -16,6 +16,7 @@
     <PrivatePolice />
     <Contacts />
     <About />
+    <Reviews/>
   </b-container>
 </template>
 
@@ -25,11 +26,16 @@ import SalesSlider from "~/components/SalesSlider";
 import PrivatePolice from "~/components/PrivatePolice";
 import Contacts from "~/components/Contacts";
 import About from "~/components/About";
+import Reviews from "~/components/Reviews";
 
 export default {
   components: {
     CatalogSlider,
     SalesSlider,
+    PrivatePolice,
+    Contacts,
+    About,
+    Reviews,
   },
 };
 </script>
