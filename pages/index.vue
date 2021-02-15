@@ -13,31 +13,30 @@
     </b-navbar>
     <CatalogSlider />
     <SalesSlider />
-    <PrivatePolice />
-    <Contacts />
-    <About />
-    <Reviews/>
+    <Error />
+
+
+
+    <PrivatePolice/>
+  <Contacts/>
   </b-container>
 </template>
 
 <script>
+import SalesSlider from '~/components/SalesSlider'
+import Error from '../components/Error.vue';
 import CatalogSlider from "~/components/CatalogSlider";
-import SalesSlider from "~/components/SalesSlider";
 import PrivatePolice from "~/components/PrivatePolice";
 import Contacts from "~/components/Contacts";
-import About from "~/components/About";
-import Reviews from "~/components/Reviews";
 
 export default {
   components: {
-    CatalogSlider,
     SalesSlider,
-    PrivatePolice,
-    Contacts,
-    About,
-    Reviews,
-  },
-};
+    Error
+
+  }
+
+}
 </script>
 
 <style scoped>

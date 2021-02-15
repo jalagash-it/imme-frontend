@@ -57,6 +57,24 @@ export default {
         }
     },
 
+    // buildModules: [
+    //     ['@nuxtjs/fontawesome', {
+    //         component: 'fa',
+    //         suffix: true,
+    //         proIcons: { // if you have bought the Pro packages
+    //           // list the icons you want to add, not listed icons will be tree-shaked
+    //           solid: [
+    //             'faHome',
+    //             'faHeart',
+    //             'faBolt',
+    //           ],
+    //           // include all icons. But dont do this.
+    //           regular: true
+    //         }
+    //       }]
+    //   ],
+     
+
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {}
 }
