@@ -15,6 +15,10 @@ export default {
             {
                 rel: 'stylesheet',
                 href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'
             }
         ]
     },
@@ -52,6 +56,24 @@ export default {
             lang: 'en'
         }
     },
+
+    // buildModules: [
+    //     ['@nuxtjs/fontawesome', {
+    //         component: 'fa',
+    //         suffix: true,
+    //         proIcons: { // if you have bought the Pro packages
+    //           // list the icons you want to add, not listed icons will be tree-shaked
+    //           solid: [
+    //             'faHome',
+    //             'faHeart',
+    //             'faBolt',
+    //           ],
+    //           // include all icons. But dont do this.
+    //           regular: true
+    //         }
+    //       }]
+    //   ],
+     
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {}

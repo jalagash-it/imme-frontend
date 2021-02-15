@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/pwa": "^3.3.5",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
@@ -19,7 +20,8 @@
     "font-awesome": "^4.7.0",
     "nuxt": "^2.14.12",
     "sass": "^1.32.7",
-    "sass-loader": "^11.0.1"
+    "sass-loader": "10.1.1",
+    "swiper": "^6.4.11"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.1.2",

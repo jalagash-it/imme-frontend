@@ -11,18 +11,23 @@
         <b-navbar-nav align="right">end</b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    
+    <CatalogSlider />
     <SalesSlider />
     <Error />
 
 
 
+    <PrivatePolice/>
+  <Contacts/>
   </b-container>
 </template>
 
 <script>
 import SalesSlider from '~/components/SalesSlider'
 import Error from '../components/Error.vue';
+import CatalogSlider from "~/components/CatalogSlider";
+import PrivatePolice from "~/components/PrivatePolice";
+import Contacts from "~/components/Contacts";
 
 export default {   
   components:{
@@ -31,10 +36,14 @@ export default {
 
   }
 
-};
+}
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -43,4 +52,10 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
+
+ 
