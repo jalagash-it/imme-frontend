@@ -75,7 +75,7 @@ export default {
   mounted() {
     new SwiperCore(".swiper-container", {
       slidesPerView: 6,
-      spaceBetween: 0,
+      spaceBetween: 10,
       
       // centerInsufficientSlides: true,
       
@@ -134,7 +134,7 @@ export default {
   border: 4px solid #ffffff;
 
   border-radius: 30px;
- 
+  box-shadow: 5px 5px 30px rgba(41, 41, 167, 0.12);
   display: flex;
   flex-direction: column;
   align-items: center;
