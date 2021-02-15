@@ -131,13 +131,12 @@
   color: #151632;
 }
 .contact__info-email {
-  display: flex;
-  align-items: center;
+  
 
   margin-bottom: 28px;
 }
 .contact__info-email a {
-  margin-left: 150px;
+  margin-left: 100px;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
