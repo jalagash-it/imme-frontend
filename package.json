@@ -18,7 +18,8 @@
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
     "sass": "^1.32.7",
-    "sass-loader": "^11.0.1"
+    "sass-loader": "10.1.1",
+    "swiper": "^6.4.11"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.1.2",
