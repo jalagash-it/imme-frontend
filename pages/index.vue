@@ -13,16 +13,22 @@
     </b-navbar>
     
     <SalesSlider />
+    <Error />
+
+
 
   </b-container>
 </template>
 
 <script>
 import SalesSlider from '~/components/SalesSlider'
+import Error from '../components/Error.vue';
 
 export default {   
   components:{
-    SalesSlider
+    SalesSlider,
+    Error
+
   }
 
 };
