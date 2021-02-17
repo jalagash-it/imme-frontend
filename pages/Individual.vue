@@ -90,21 +90,19 @@
             обработки Персональных <br />
             данных
           </b-form-checkbox>
-            <b-button variant="outline-primary">Button</b-button>
-
+          <b-button variant="outline-primary">Button</b-button>
         </b-form-group>
       </b-col>
     </b-row>
   </b-container>
 </template>
 <style scoped>
-.form{
-    
-height: 389px;
-left: -2px;
-top: 0px;
+.form {
+  height: 389px;
+  left: -2px;
+  top: 0px;
 
-background: linear-gradient(180deg, #6B8BC9 0%, #8CAEEF 100%);
-border-radius: 30px;
+  background: linear-gradient(180deg, #6b8bc9 0%, #8caeef 100%);
+  border-radius: 30px;
 }
 </style>

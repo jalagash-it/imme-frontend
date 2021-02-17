@@ -7,78 +7,405 @@
       ></b-col>
     </b-row>
 
-    <b-row class="d-flex justify-content-center popular__items ">
+    <b-row class="d-flex justify-content-center popular-content">
       <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
+        img-src="../assets/img/popular/1.png"
         img-alt="Image"
         img-top
         tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
       >
         <b-card-text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
         </b-card-text>
 
-        <b-button href="#" variant="primary">Go somewhere</b-button>
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
       </b-card>
       <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
+        img-src="../assets/img/popular/1.png"
         img-alt="Image"
         img-top
         tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
       >
         <b-card-text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
         </b-card-text>
 
-        <b-button href="#" variant="primary">Go somewhere</b-button>
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
       </b-card>
       <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
+        img-src="../assets/img/popular/1.png"
         img-alt="Image"
         img-top
         tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
       >
         <b-card-text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
         </b-card-text>
 
-        <b-button href="#" variant="primary">Go somewhere</b-button>
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
       </b-card>
       <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
+        img-src="../assets/img/popular/1.png"
         img-alt="Image"
         img-top
         tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
       >
         <b-card-text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
         </b-card-text>
 
-        <b-button href="#" variant="primary">Go somewhere</b-button>
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
+      </b-card>
+      <b-card
+        img-src="../assets/img/popular/1.png"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 302px"
+        class="mb-2 popular__items"
+      >
+        <b-card-text>
+          <span>4600 ₽</span>
+          <p class="popular__items-title">Наименование изделия</p>
+          <p
+            align-h="center"
+            align-v="center"
+            class="d-flex justify-content-between"
+          >
+            <img src="../assets/img/popular/stars.png" alt="" />
+            <a href="#" class="popular-link"
+              ><img src="../assets/img/popular/icon-comment.png" alt="" /> 28
+              отзывов</a
+            >
+          </p>
+        </b-card-text>
+
+        <b-button
+          href="#"
+          class="d-flex justify-content-center"
+          variant="outline-primary"
+        >
+          В корзину</b-button
+        >
       </b-card>
     </b-row>
-  
     <b-row>
-      <b-col><h1>SEO-блок</h1></b-col>
+      <b-col>
+        <b-button href="#" mb="60px" variant="outline-primary">
+          Показать еще</b-button
+        >
+      </b-col>
     </b-row>
+
     <b-row>
-      <b-col cols="6">
+      <b-col><h1 class="seo__title">SEO-блок</h1></b-col>
+    </b-row>
+    <b-row class="seo__block">
+      <b-col cols="6" class="seo__block-img">
         <img src="../assets/img/map.png" alt="" />
 
         <p>
@@ -92,7 +419,7 @@
           новых принципов формирования материально-технической и кадровой базы.
         </p>
       </b-col>
-      <b-col cols="6">
+      <b-col cols="6" class="seo__text">
         <p>
           И нет сомнений, что явные признаки победы институционализации набирают
           популярность среди определенных слоев населения, а значит, должны быть
@@ -128,23 +455,19 @@ export default {
       items: [
         {
           text: "Главная",
-          href: "#"
+          href: "#",
         },
 
         {
           text: "Популярное",
-          active: true
-        }
-      ]
+          active: true,
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 <style scoped>
-img {
-  width: 100%;
-  height: auto;
-}
 .breadcrumb {
   background-color: #f7f9fc;
   margin-bottom: 48px;
@@ -190,14 +513,74 @@ img {
 
   color: #151632;
 }
-.popular__items {
+.popular-content {
   margin-bottom: 48px;
 }
- 
-.mb-2{
-  margin-right: 15px;
+.popular__items {
+  background: #ffffff;
+  border: 16px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 30px rgba(41, 41, 167, 0.12);
+  border-radius: 20px;
+  margin-right: 24px;
+
+  margin-bottom: 24px !important;
 }
-.mb-2:last-child{
-  margin-right: 0;
+.popular__items span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #151632;
+}
+.popular__items-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #151632;
+}
+.popular-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #8889b3;
+}
+.seo__title {
+  margin-top: 80px;
+  margin-bottom: 45px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #151632;
+}
+.seo__block {
+}
+.seo__block img {
+  width: 100%;
+  
+
+ 
+  box-sizing: border-box;
+ 
+  border-radius: 30px;
+}
+.seo__block p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #60617b;
+}
+.seo__text{
+
 }
 </style>
