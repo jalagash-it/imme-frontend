@@ -201,7 +201,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
   grid-gap: 25px;
- 
+
   padding-bottom: 60px;
   justify-content: center;
 }
@@ -209,13 +209,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-   
-height: 452px;
+
+  height: 452px;
   padding: 25px;
 
   background: #ffffff;
 
-  
   background: url("../assets/img/reviews__item.png") no-repeat center center /
     cover;
 
@@ -270,23 +269,21 @@ height: 452px;
 .reviews__btns .btn-show {
   padding: 12px 48px;
 
-  
-background: none;
+  background: none;
   border: 1px solid #6b8bc9;
   box-sizing: border-box;
   border-radius: 12px;
   margin-bottom: 25px;
   font-weight: 500;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-/* color/text_accent */
+  /* color/text_accent */
 
-color: #426CBE;
-
+  color: #426cbe;
 }
 .reviews__btns .btn-review {
   padding: 16px;
@@ -298,15 +295,13 @@ color: #426CBE;
   border-radius: 12px;
   margin-bottom: 80px;
   font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 15px;
- border: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
 
-text-transform: uppercase;
- 
+  text-transform: uppercase;
 
-color: #FFFFFF;
- 
+  color: #ffffff;
 }
 </style>
