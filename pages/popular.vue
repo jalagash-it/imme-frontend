@@ -473,8 +473,8 @@ export default {
   margin-bottom: 48px;
 }
 .breadcrumb-item + .breadcrumb-item::before {
-  content: "";
-  background: url("../assets/img/ellipse.png");
+  /* content: "";
+  background: url("../assets/img/ellipse.png"); */
 }
 .breadcrumb a {
   font-style: normal;
@@ -496,7 +496,7 @@ export default {
 .popular {
   background: #f7f9fc;
   font-family: "Montserrat";
-  padding: 25px;
+   
 
   font-family: "Montserrat";
 }
