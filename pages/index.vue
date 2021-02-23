@@ -15,11 +15,13 @@
 <style scoped>
 body {
   margin: 0;
+  padding: 0;
   font-family: "Montserrat";
 }
-.container-fluid {
-  padding: 0;
+
+.container-fluid{
   margin: 0;
+  padding: 0;
 }
 
 img {
