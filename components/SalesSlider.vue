@@ -1,176 +1,144 @@
 <template>
   <section>
-    <div class="header">
-      <div class="title">
-        <h1>Акции и скидки</h1>
-        <span>(17)</span>
-      </div>
-      <div class="show-all">
-        <a href="#">смотреть все</a>
-      </div>
-    </div>
-    <div class="cards-container">
-      <div class="left">
-        <span>
-          <i class="fas fa-chevron-left"></i>
-        </span>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card_image">
-            <div class="action">Акция</div>
-          </div>
-          <div class="card_info">
-            <div class="price">
-              <div class="newprice">4600 ₽</div>
-              <div class="oldprice">5 800 ₽</div>
+    <b-container>
+      <b-row>
+        <b-col>
+          <div class="header">
+            <div class="title">
+              <h1>Акции и скидки</h1>
+              <span>(17)</span>
             </div>
-            <div class="title">Наименование изделия</div>
-            <div class="voises">
-              <ul>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <span class="score">4,3</span>
-              </ul>
-              <div class="void">
-                <i class="far fa-comment-dots"></i>
-                <span>28</span>
-                отзывов
+            <div class="show-all">
+              <a href="#">смотреть все</a>
+            </div>
+          </div>
+          <div class="card-carousel-wrapper">
+            <div
+              class="card-carousel--nav__left"
+              @click="moveCarousel(-1)"
+              :disabled="atHeadOfList"
+            ></div>
+            <div class="card-carousel">
+              <div class="card-carousel--overflow-container">
+                <div
+                  class="card-carousel-cards"
+                  :style="{
+                    transform: 'translateX' + '(' + currentOffset + 'px' + ')',
+                  }"
+                >
+                  <!-- <div
+                    hidden
+                    class="card-carousel--card"
+                    v-for="(item, idx) in items"
+                    :key="idx"
+                    :style="{ 'background-image': 'url(' + item.img + ')' }"
+                  >
+                    <div class="card-carousel--card--footer">
+                      <p>{{ item.name }}</p>
+                      <p class="link-to-card">
+                        {{ item.link }}
+                      </p>
+                    </div>
+                  </div> -->
+                  <div class="card" v-for="(item, idx) in items" :key="idx">
+                    <div class="card_image">
+                      <img src="/img/bed2.jpg" alt="" />
+                      <div class="action">Акция</div>
+                    </div>
+                    <div class="card_info">
+                      <div class="price">
+                        <div class="newprice">4600 ₽</div>
+                        <div class="oldprice">5 800 ₽</div>
+                      </div>
+                      <div class="title">Наименование изделия</div>
+                      <div class="voises">
+                        <ul>
+                          <li><i class="far fa-star"></i></li>
+                          <li><i class="far fa-star"></i></li>
+                          <li><i class="far fa-star"></i></li>
+                          <li><i class="far fa-star"></i></li>
+                          <li><i class="far fa-star"></i></li>
+                          <span class="score">4,3</span>
+                        </ul>
+                        <div class="void">
+                          <i class="far fa-comment-dots"></i>
+                          <span>28</span>
+                          отзывов
+                        </div>
+                      </div>
+                      <button class="btn">В корзину</button>
+                    </div>
+                  </div>
+                  <!-- 
+                     
+                   -->
+                </div>
               </div>
             </div>
-            <button class="btn">В корзину</button>
+            <div
+              class="card-carousel--nav__right"
+              @click="moveCarousel(1)"
+              :disabled="atEndOfList"
+            ></div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card_image">
-            <img src="/img/bed2.jpg" alt="" />
-            <div class="action">Акция</div>
-          </div>
-          <div class="card_info">
-            <div class="price">
-              <div class="newprice">4600 ₽</div>
-              <div class="oldprice">5 800 ₽</div>
-            </div>
-            <div class="title">Наименование изделия</div>
-            <div class="voises">
-              <ul>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <span class="score">4,3</span>
-              </ul>
-              <div class="void">
-                <i class="far fa-comment-dots"></i>
-                <span>28</span>
-                отзывов
-              </div>
-            </div>
-            <button class="btn">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card_image">
-            <img src="/img/bed2.jpg" alt="" />
-            <div class="action">Акция</div>
-          </div>
-          <div class="card_info">
-            <div class="price">
-              <div class="newprice">4600 ₽</div>
-              <div class="oldprice">5 800 ₽</div>
-            </div>
-            <div class="title">Наименование изделия</div>
-            <div class="voises">
-              <ul>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <span class="score">4,3</span>
-              </ul>
-              <div class="void">
-                <i class="far fa-comment-dots"></i>
-                <span>28</span>
-                отзывов
-              </div>
-            </div>
-            <button class="btn">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card_image">
-            <img src="/img/bed2.jpg" alt="" />
-            <div class="action">Акция</div>
-          </div>
-          <div class="card_info">
-            <div class="price">
-              <div class="newprice">4600 ₽</div>
-              <div class="oldprice">5 800 ₽</div>
-            </div>
-            <div class="title">Наименование изделия</div>
-            <div class="voises">
-              <ul>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <span class="score">4,3</span>
-              </ul>
-              <div class="void">
-                <i class="far fa-comment-dots"></i>
-                <span>28</span>
-                отзывов
-              </div>
-            </div>
-            <button class="btn">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card_image">
-            <img src="/img/bed2.jpg" alt="" />
-            <div class="action">Акция</div>
-          </div>
-          <div class="card_info">
-            <div class="price">
-              <div class="newprice">4600 ₽</div>
-              <div class="oldprice">5 800 ₽</div>
-            </div>
-            <div class="title">Наименование изделия</div>
-            <div class="voises">
-              <ul>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <span class="score">4,3</span>
-              </ul>
-              <div class="void">
-                <i class="far fa-comment-dots"></i>
-                <span>28</span>
-                отзывов
-              </div>
-            </div>
-            <button class="btn">В корзину</button>
-          </div>
-        </div>
-      </div>
-      <div class="right">
-        <span>
-          <i class="fas fa-chevron-right"></i>
-        </span>
-      </div>
-    </div>
+        </b-col>
+      </b-row>
+    </b-container>
   </section>
 </template>
-
-<style scoped lang="scss">
+<script>
+export default {
+  data() {
+    return {
+      currentOffset: 0,
+      windowSize: 300,
+      paginationFactor: 300,
+      items: [
+        { name: "Бортики", link: "#", img: require("~/assets/img/1.png") },
+        { name: "Балдахины", link: "#", img: require("~/assets/img/2.png") },
+        { name: "Кохоны", link: "#", img: require("~/assets/img/3.png") },
+        { name: "Конверты", link: "#", img: require("~/assets/img/4.png") },
+        { name: "Косички", link: "#", img: require("~/assets/img/5.png") },
+        {
+          name: "Постельное белье",
+          link: "#",
+          img: require("~/assets/img/6.png"),
+        },
+        { name: "Конверты", link: "#", img: require("~/assets/img/4.png") },
+        { name: "Косички", link: "#", img: require("~/assets/img/5.png") },
+        {
+          name: "Постельное белье",
+          link: "#",
+          img: require("~/assets/img/6.png"),
+        },
+      ],
+    };
+  },
+  computed: {
+    atEndOfList() {
+      return false;
+      return (
+        this.currentOffset <=
+        this.paginationFactor * -1 * (this.items.length - this.windowSize)
+      );
+    },
+    atHeadOfList() {
+      return this.currentOffset === 0;
+    },
+  },
+  methods: {
+    moveCarousel(direction) {
+      // Find a more elegant way to express the :style. consider using props to make it truly generic
+      if (direction === 1 && !this.atEndOfList) {
+        this.currentOffset -= this.paginationFactor;
+      } else if (direction === -1 && !this.atHeadOfList) {
+        this.currentOffset += this.paginationFactor;
+      }
+    },
+  },
+};
+</script>
+<style lang="scss" scoped>
 section {
   height: 500px;
   border: 1px solid green;
@@ -189,165 +157,166 @@ section {
   .cards-container {
   }
 }
-.container_cards {
+.asd {
+  background-image: url("~assets/img/1.png");
+  background-image: url("~assets/img/2.png");
+  background-image: url("~assets/img/3.png");
+  background-image: url("~assets/img/4.png");
+  background-image: url("~assets/img/5.png");
+  background-image: url("~assets/img/6.png");
+}
+.card-carousel-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.container_cards .card {
-  margin-left: 24px;
-  max-width: 305px;
-  height: 437px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 15px 15px 0 15px;
-  box-shadow: 5px 5px 30px 0px rgba(41, 41, 167, 0.12);
-}
-.container_cards .card_image {
-  /* img/bed2.jpg */
-  background-image: url("~assets/img/Rectangle 61.png");
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  position: relative;
-}
-.container_cards .card_image img {
-  height: 265px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: relative;
-}
-.container_cards .card_image .action {
-  display: flex;
-  position: absolute;
-  left: 15px;
-  bottom: 16px;
-  width: 71px;
-  height: 28px;
-  background: #f160ae;
-  font-family: "Montserrat", sans-serif;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 10px;
+  margin: 20px 0 40px;
+  color: #666a73;
 }
-.container_cards .card_info {
-  padding-top: 16px;
-}
-.container_cards .card_info .price {
-  display: flex;
-  flex-direction: row;
-}
-.container_cards .card_info .price .newprice {
-  color: #de2996;
-  font-size: 16px;
-  font-family: "Montserrat";
-  font-weight: bold;
-}
-.container_cards .card_info .price .oldprice {
-  display: flex;
-  align-items: center;
-  margin-left: 14px;
-  font-size: 12px;
-  color: #8889b3;
-  text-decoration: line-through;
-}
-.container_cards .card_info .title {
-  margin-top: 11px;
-  font-style: normal;
-  font-weight: 550px;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-.container_cards .card_info .voises {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.container_cards .card_info .voises ul {
-  padding: 0;
-  font-size: 12px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-}
-.container_cards .card_info .voises ul i {
-  color: #f4c15c;
-}
-.container_cards .card_info .voises ul .score {
-  margin-left: 10px;
-  color: rgba(0, 0, 0, 0.5);
-}
-.container_cards .card_info .void {
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: normal;
-  font-size: 12px;
-}
-.container_cards .card_info .btn {
-  margin-top: 150px;
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 40px;
-  font-weight: 500;
-  font-size: 12px;
-  background-color: #fff;
-  border-radius: 15px;
-  border: 1px solid #6b8bc9;
-  text-transform: uppercase;
+.link-to-card {
   color: #6b8bc9;
-  cursor: pointer;
+  font-weight: 500;
+  font-size: 11px;
 }
-.left,
-.right {
+.card-carousel {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
-.left span,
-.right span {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(75, 111, 173, 0.2);
-  border-radius: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-30px);
-  cursor: pointer;
+.card-carousel--overflow-container {
+  overflow: hidden;
 }
-.left span:hover i,
-.right span:hover i {
-  color: #fff;
-}
-.left i,
-.right i {
-  font-size: 20px;
-  color: rgba(75, 111, 173, 0.6);
-}
-.right span {
-  margin-left: 24px;
-}
-.topic {
-  margin-left: 90px;
-}
-.topic h1 {
+.card-carousel--nav__left,
+.card-carousel--nav__right {
   display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 2px solid #42b883;
+  border-right: 2px solid #42b883;
+  cursor: pointer;
+  margin: 0 20px;
+  transition: transform 150ms linear;
 }
-.topic span {
-  margin-left: 10px;
-  color: rgba(0, 0, 0, 0.4);
+.card-carousel--nav__left[disabled],
+.card-carousel--nav__right[disabled] {
+  opacity: 0.2;
+  border-color: black;
+}
+.card-carousel--nav__left {
+  transform: rotate(-135deg);
+}
+.card-carousel--nav__left:active {
+  transform: rotate(-135deg) scale(0.9);
+}
+.card-carousel--nav__right {
+  transform: rotate(45deg);
+}
+.card-carousel--nav__right:active {
+  transform: rotate(45deg) scale(0.9);
+}
+
+.card-carousel-cards {
+  display: flex;
+  transition: transform 150ms ease-out;
+  transform: translatex(0px);
+}
+.card-carousel-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 300px;
+  width: 300px;
+  height: 430px;
+  // background-image: url(~assets/img/2.png),
+  //   linear-gradient(to bottom, #cbbfff 20%, #cbbfff 0%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0 rgba(40, 44, 53, 0.06),
+    0 2px 2px 0 rgba(40, 44, 53, 0.08);
+  border-radius: 12px;
+  z-index: 3;
+  margin-bottom: 2px;
+}
+.card-carousel-cards .card-carousel--card:first-child {
+  margin-left: 0;
+}
+.card-carousel-cards .card-carousel--card:last-child {
+  margin-right: 0;
+}
+.card-carousel-cards .card-carousel--card img {
+  vertical-align: bottom;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  transition: opacity 150ms linear;
+  user-select: none;
+}
+.card-carousel-cards .card-carousel--card img:hover {
+  opacity: 0.5;
+}
+.card-carousel-cards .card-carousel--card--footer {
+  border-top: 0;
+  padding: 7px 15px;
+}
+.card-carousel-cards .card-carousel--card--footer p {
+  padding: 3px 0;
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #2c3e50;
+  user-select: none;
+}
+.card-carousel-cards .card-carousel--card--footer p.tag {
+  font-size: 11px;
+  font-weight: 300;
+  padding: 4px;
+  background: rgba(40, 44, 53, 0.06);
+  display: inline-block;
+  position: relative;
+  margin-left: 4px;
+  color: #666a73;
+}
+.card-carousel-cards .card-carousel--card--footer p.tag:before {
+  content: "";
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-color: transparent rgba(40, 44, 53, 0.06) transparent transparent;
+  border-style: solid;
+  border-width: 8px 12px 12px 0;
+}
+.card-carousel-cards .card-carousel--card--footer p.tag.secondary {
+  margin-left: 0;
+  border-left: 1.45px dashed white;
+}
+.card-carousel-cards .card-carousel--card--footer p.tag.secondary:before {
+  display: none !important;
+}
+.card-carousel-cards .card-carousel--card--footer p.tag:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  float: left;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: white;
+  box-shadow: 0px 0px 0px #004977;
+}
+
+h1 {
+  font-size: 3.6em;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 0;
+  color: #42b883;
 }
 </style>
