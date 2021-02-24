@@ -16,7 +16,28 @@
                     <a href="#" id="yourCity">Владимир</a>
                   </div>
                   <social-medias />
-                  <div>3</div>
+                </b-navbar-nav>
+                <b-navbar-nav
+                  class="ml-auto your-city"
+                  style="flex-direction: column; text-align: right"
+                >
+                  <a href="tel:+88002018847">8 800 201 88 47</a>
+                  <label>Принимаем заказы: с <b>9.00 до 20.00</b></label>
+                </b-navbar-nav>
+                <b-navbar-nav
+                  class="ml-auto your-city"
+                  style="
+                    justify-content: flex-end;
+                    flex-direction: row;
+                    text-align: right;
+                  "
+                >
+                  <fa
+                    :icon="['fas', 'shopping-cart']"
+                    class="in-circle"
+                    style="margin-right: 16px"
+                  />
+                  <fa :icon="['fas', 'user']" class="in-circle" />
                 </b-navbar-nav>
               </b-collapse>
             </div>
@@ -43,10 +64,15 @@
 </template>
 
 <style scoped lang="scss">
-
+.in-circle {
+  background: #b5beca;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border-radius: 50%;
+}
 header {
   height: 800px;
-  border: 1px solid black;
   background-image: url("~assets/img/img.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -56,7 +82,6 @@ header {
     flex-direction: column;
     .row-1 {
       display: flex;
-      border: 1px solid red;
       height: 72px;
       margin-top: 8px;
       width: 100%;
@@ -71,7 +96,6 @@ header {
       }
     }
     .row-2 {
-      border: 1px solid green;
       width: 100%;
       height: 42px;
     }

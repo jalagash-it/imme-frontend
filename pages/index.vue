@@ -2,7 +2,7 @@
   <b-container fluid>
     <Header/>
     <!-- <CatalogSlider /> -->
-    <custom-slider/>
+    <custom-slider style="height:300px;"/>
     <!-- <Error />
 
     <PrivatePolice />

@@ -1,16 +1,16 @@
 <template>
-  <ul>
+  <ul class="icons-in-circle">
     <li>
-      <b-icon icon="arrow-up"></b-icon>
+      <fa :icon="['fab', 'vk']" />
     </li>
     <li>
-      <b-icon icon="arrow-up"></b-icon>
+      <fa :icon="['fab', 'facebook-f']" />
     </li>
     <li>
-      <b-icon icon="arrow-up"></b-icon>
+      <fa :icon="['fab', 'instagram']" />
     </li>
     <li>
-      <b-icon icon="arrow-up"></b-icon>
+      <fa :icon="['fab', 'odnoklassniki']" />
     </li>
   </ul>
 </template>
@@ -22,5 +22,12 @@ ul {
   width: 200px;
   justify-content: space-evenly;
   align-items: center;
+}
+.icons-in-circle > li > svg {
+  background: #b5beca;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border-radius: 50%;
 }
 </style>
